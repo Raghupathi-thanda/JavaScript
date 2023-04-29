@@ -1,0 +1,10 @@
+<script>
+    var categories = ["Electronics", "Footwear","Fashion"]; 
+    document.write(categories.toString()+"<br>");
+    document.write(categories.join("===>")+"<br>");
+    document.write(categories.slice(1,2)+"<br>");
+    categories.map(function(category){
+        document.write(`<button>${category}</button><br>`)
+    })
+
+</script>
