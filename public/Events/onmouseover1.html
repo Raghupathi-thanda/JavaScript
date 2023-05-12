@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ShowDetails(){
+            document.querySelector("p").innerHTML = `
+                <b>Special Offer</b> <i> 50% OFF </i> on Nike Footwear.
+            `;
+            document.querySelector("img").style.width = "300px";
+        }
+        function HideDetails(){
+            document.querySelector("p").innerHTML = "";
+            document.querySelector("img").style.width = "100px";
+        }
+    </script>
+</head>
+<body>
+    <img onmouseover="ShowDetails()" onmouseout="HideDetails()" src="images/shoe.jpg" width="100" height="100">
+    <p></p>
+</body>
+</html>
